@@ -3,7 +3,7 @@
 
 A modern, responsive website for Suriya Kanthi Sri Lankan restaurant.
 
-## 🔧 Easy Configuration
+## 🔧 Easy Configuration 
 
 All configurable settings are at the top of `src/pages/Index.tsx`:
 
