@@ -1,14 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-
-// Configuration variables for easy updates
-const HERO_CONFIG = {
-  restaurantName: "Suriya Kanthi",
-  tagline: "Authentic Sri Lankan Cuisine",
-  description: "Experience the rich flavors and aromatic spices of traditional Sri Lankan dishes in the heart of Germany.",
-  heroImage: "/placeholder.svg", // Replace with actual image
-  woltOrderLink: "https://wolt.com/restaurant", // Replace with actual Wolt link
-};
+import { SITE_CONFIG } from '@/config/siteConfig';
 
 const Hero = () => {
   const scrollToMenu = () => {
@@ -19,7 +11,7 @@ const Hero = () => {
   };
 
   const handleWoltOrder = () => {
-    window.open(HERO_CONFIG.woltOrderLink, '_blank');
+    window.open(SITE_CONFIG.woltOrderLink, '_blank');
   };
 
   return (
@@ -34,13 +26,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            {HERO_CONFIG.restaurantName}
+            {SITE_CONFIG.restaurantName}
           </h1>
           <p className="text-xl md:text-2xl text-orange-100 mb-4 font-light">
-            {HERO_CONFIG.tagline}
+            {SITE_CONFIG.tagline}
           </p>
           <p className="text-lg text-orange-200 mb-12 max-w-2xl mx-auto leading-relaxed">
-            {HERO_CONFIG.description}
+            {SITE_CONFIG.description}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

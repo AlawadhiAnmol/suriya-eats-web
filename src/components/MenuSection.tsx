@@ -2,8 +2,9 @@
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { SITE_CONFIG } from '@/config/siteConfig';
 
-// Configuration for easy updates
+// Menu data configuration
 const MENU_CONFIG = {
   categories: [
     {
@@ -110,7 +111,7 @@ const MenuSection = () => {
         <div className="text-center mt-12">
           <p className="text-sm text-gray-500 mb-4">🌶️ = Mild • 🌶️🌶️ = Medium • 🌶️🌶️🌶️ = Spicy</p>
           <Button 
-            onClick={() => window.open(MENU_CONFIG.woltOrderLink || '#', '_blank')}
+            onClick={() => window.open(SITE_CONFIG.woltOrderLink, '_blank')}
             size="lg" 
             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
