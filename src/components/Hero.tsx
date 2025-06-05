@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { SITE_CONFIG } from '@/config/siteConfig';
+import { SITE_CONFIG } from '@/pages/Index';
 
 const Hero = () => {
   const scrollToMenu = () => {
@@ -45,9 +45,8 @@ const Hero = () => {
             </Button>
             <Button 
               onClick={handleWoltOrder}
-              variant="outline" 
               size="lg" 
-              className="border-2 border-white text-white hover:bg-white hover:text-red-800 px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               Order on Wolt
             </Button>

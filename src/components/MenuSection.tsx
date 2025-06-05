@@ -2,9 +2,9 @@
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { SITE_CONFIG } from '@/config/siteConfig';
+import { SITE_CONFIG } from '@/pages/Index';
 
-// Menu data configuration
+// ===== MENU CONFIGURATION - EDIT THIS TO UPDATE MENU =====
 const MENU_CONFIG = {
   categories: [
     {
@@ -50,6 +50,7 @@ const MENU_CONFIG = {
     }
   ]
 };
+// ===== END MENU CONFIGURATION =====
 
 const MenuSection = () => {
   const [activeCategory, setActiveCategory] = useState('appetizers');
@@ -113,7 +114,7 @@ const MenuSection = () => {
           <Button 
             onClick={() => window.open(SITE_CONFIG.woltOrderLink, '_blank')}
             size="lg" 
-            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Order Online via Wolt
           </Button>
